@@ -1,24 +1,61 @@
-import java.util.ArrayList;
+import java.util.*;
 
 
-public class CafeUtil {
+class CafeUtil {
+
+
+    public String getStreakGoal(int numWeeks){
+        int drinkOrder = 0;
+        for(int i = 0; i <= numWeeks; i++){
+            drinkOrder += i;
+        }
+        String total = String.valueOf(drinkOrder);
+        return total;
+    }
+
+
+    public String getOrderTotal(double[] prices){
+        double drinkOrder = 0;
+        for(int i = 0; i < prices.length; i++){
+            drinkOrder += prices[i];
+        }
+        String total = String.valueOf(drinkOrder);
+        return total;
+    }
+
+
+    public String displayMenu(ArrayList<String> menuItems) {
+        for(String item : menuItems) {
+            System.out.println(menuItems.indexOf(item) + " " + item);
+        }
+        return "";
+    }
     
-int getStreakGoal(numWeeks);
 
-ArrayList<Integer> myTotal = new ArrayList<Integer>();
-return myTotal;
-}
+    public String addCustomer(ArrayList<String> customers) {
+        System.out.println(customers);
+        return "";
+    }
 
-
-// double getOrderTotal(double[] prices)
-
+    }
 
 
-// void displayMenu(ArrayList<String> menuItems)
 
 
-// addCustomer(ArrayList<String> customers)
-// String userName = System.console().readLine();
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
