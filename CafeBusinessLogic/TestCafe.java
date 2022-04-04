@@ -34,10 +34,10 @@ public class TestCafe {
         // --- Test 4 times ---
         for (int i = 0; i < 4; i++) {
             System.out.println("Please enter your name:");
-            String userName = System.console().readLine();
+            String user = System.console().readLine();
             appTest.addCustomer(customers);
-            customers.add(userName);
-            System.out.printf("Hello, %s! There are %d person(s) ahead of you.\n", userName, customers.indexOf(userName));
+            customers.add(user);
+            System.out.printf("Hello, %s! There are %d person(s) ahead of you.\n", user, customers.indexOf(user));
             System.out.println("\n");
         }
     }
