@@ -19,7 +19,7 @@ class CafeUtil {
         for(int i = 0; i < prices.length; i++){
             drinkOrder += prices[i];
         }
-        String total = String.valueOf(drinkOrder);
+        String total = String.valueOf("$"+drinkOrder);
         return total;
     }
 
